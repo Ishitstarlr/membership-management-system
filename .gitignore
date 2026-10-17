@@ -1,0 +1,24 @@
+# Virtual environments
+venv/
+backend/venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Databases
+*.db
+*.sqlite3
+
+# Node / Frontend
+node_modules/
+dist/
+
+# Environment variables
+.env
+.env.local
+
+# OS
+.DS_Store
