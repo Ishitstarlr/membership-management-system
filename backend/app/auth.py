@@ -4,6 +4,12 @@ from typing import Optional
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 import jwt
+import bcrypt
+if not hasattr(bcrypt, "__about__"):
+    class _BcryptAbout:
+        __version__ = getattr(bcrypt, "__version__", "4.2.1")
+    bcrypt.__about__ = _BcryptAbout()
+
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 
