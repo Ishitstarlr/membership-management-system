@@ -1,6 +1,8 @@
 // API client with token management and error handling
 
-const API_BASE = '/api';
+const API_BASE = (typeof window !== 'undefined' && (window.location.port === '5173' || window.location.port === '3000'))
+  ? `${window.location.protocol}//${window.location.hostname}:8000/api`
+  : '/api';
 
 export function getStoredUser() {
   const token = localStorage.getItem('token');

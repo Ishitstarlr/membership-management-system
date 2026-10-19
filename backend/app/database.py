@@ -1,8 +1,13 @@
 import os
+from pathlib import Path
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./membership.db")
+# Anchor SQLite database to project root directory
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+DEFAULT_SQLITE_PATH = BASE_DIR / "membership.db"
+
+DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DEFAULT_SQLITE_PATH}")
 
 connect_args = {}
 if DATABASE_URL.startswith("sqlite"):
