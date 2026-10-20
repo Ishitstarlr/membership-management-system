@@ -1,24 +1,21 @@
-# Virtual environments
-venv/
-backend/venv/
-
-# Python caches
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-.pytest_cache/
+*.pyo
+venv/
+*.egg-info/
+*.orig
 
-# Databases
-*.db
-*.sqlite3
+# SQLite database (keep local only)
+membership.db
 
-# Node / Frontend
+# Node / Vite
 node_modules/
 dist/
-
-# Environment variables
-.env
+vite.config.ts
 .env.local
 
-# OS
+# OS / editor artefacts
 .DS_Store
+.idea/
+*.log
