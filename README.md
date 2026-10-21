@@ -1,5 +1,7 @@
 # ACM NITK Membership Management System
 
+🎬 **[Watch Demo Video](https://github.com/Ishitstarlr/membership-management-system)**
+
 A full-stack, responsive web application for managing club memberships, Special Interest Groups (SIGs), team rosters, and real-time club analytics. Built for the **ACM NITK Web Team Recruitment Task**.
 
 ---
@@ -236,14 +238,7 @@ Builds cleanly with zero errors in ~500ms.
 
 ---
 
-## 9. Demo Walkthrough Video
-
-A detailed, scene-by-scene script covering all 5 pages and workflows is prepared in [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md).
-* **Demo Video Link:** [Watch Demo Video](https://github.com/Ishitstarlr/membership-management-system)
-
----
-
-## 10. Known Limitations & Planned Enhancements
+## 9. Known Limitations & Planned Enhancements
 
 * **Avatar File Uploads:** Current implementation accepts an avatar image URL (e.g. DiceBear / GitHub avatar). Direct multipart image file uploading to local disk or cloud S3 bucket can be added as an enhancement.
 * **Password Reset Workflow:** In development, forgotten passwords can be updated directly via the seed script or admin console. An email-based reset token flow can be implemented for production.
