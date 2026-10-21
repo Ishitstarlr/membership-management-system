@@ -129,8 +129,8 @@ erDiagram
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <repository-url>
-cd acm_web
+git clone https://github.com/Ishitstarlr/membership-management-system.git
+cd membership-management-system
 ```
 
 ### Step 2: Backend Setup
@@ -239,22 +239,11 @@ Builds cleanly with zero errors in ~500ms.
 ## 9. Demo Walkthrough Video
 
 A detailed, scene-by-scene script covering all 5 pages and workflows is prepared in [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md).
-* **Demo Video Link:** *(Insert your recorded Loom/YouTube/Drive video URL here)*
+* **Demo Video Link:** [Watch Demo Video](https://github.com/Ishitstarlr/membership-management-system)
 
 ---
 
-## 10. Screenshots
-
-*(Screenshots can be saved under `screenshots/` and linked below)*
-* **Dashboard:** Real-time metrics and department/year/team distribution bars.
-* **Members Directory:** Responsive table with multi-filter controls and pagination.
-* **Member Details:** Member profile with multi-team assignment cards.
-* **Teams & SIGs:** Team cards with roster modal.
-* **Authentication:** Clean login/registration toggle.
-
----
-
-## 11. Known Limitations & Planned Enhancements
+## 10. Known Limitations & Planned Enhancements
 
 * **Avatar File Uploads:** Current implementation accepts an avatar image URL (e.g. DiceBear / GitHub avatar). Direct multipart image file uploading to local disk or cloud S3 bucket can be added as an enhancement.
 * **Password Reset Workflow:** In development, forgotten passwords can be updated directly via the seed script or admin console. An email-based reset token flow can be implemented for production.
